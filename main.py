@@ -1,6 +1,8 @@
 import random
 import win32com.client as win32
 
+from selenium_sadness import ask_gpt
+
 outlook = win32.Dispatch('outlook.application')
 
 # email variable setup --
@@ -39,3 +41,8 @@ async def email(recipient, subject, body):
     # mail.Attachments.Add(attachment)
 
     mail.Send()
+
+
+async def main():
+    print("test")
+    ask_gpt()
