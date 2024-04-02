@@ -18,10 +18,10 @@ loop = asyncio.get_event_loop()
 # loop.call_later(5, stop)
 tasks = []
 tasks.append(loop.create_task(periodic()))
-tasks.append(loop.create_task(ask_gpt()))
+# tasks.append(loop.create_task(ask_gpt()))
 
 try:
-    # loop.run_until_complete(task)
-    loop.run_until_complete(ask_gpt)
+    loop.run_until_complete(tasks[0])
+    # loop.run_until_complete(ask_gpt)
 except asyncio.CancelledError:
     pass

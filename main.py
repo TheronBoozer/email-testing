@@ -7,7 +7,7 @@ outlook = win32.Dispatch('outlook.application')
 
 # email variable setup --
 # the email it sends to and the body and subject options
-recipient = 'wtboozer@wpi.edu' #'bspatrick@wpi.edu'
+recipient = 'bspatrick@wpi.edu' #'bspatrick@wpi.edu'
 
 subjects = [
     'pretty please',
