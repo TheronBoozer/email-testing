@@ -18,8 +18,9 @@ subjects = [
 ]
 
 bodies = [
-    'What are the chances you even read these?',
-    'Brooke '
+    'What are the chances you even read these?https://docs.google.com/forms/d/e/1FAIpQLSehWmN_JIDX881XQxSNoRF-d6fVwwGMoI3I4uRhI2PkSuDPEw/viewform?usp=sf_link',
+    'Brooke https://docs.google.com/forms/d/e/1FAIpQLSehWmN_JIDX881XQxSNoRF-d6fVwwGMoI3I4uRhI2PkSuDPEw/viewform?usp=sf_link'
+    'https://docs.google.com/forms/d/e/1FAIpQLSehWmN_JIDX881XQxSNoRF-d6fVwwGMoI3I4uRhI2PkSuDPEw/viewform?usp=sf_link'
 ]
 
 async def random_email():
@@ -39,6 +40,7 @@ async def email(recipient, subject, body):
     # To attach a file to the email (optional):
     # attachment  = "Path to the attachment"
     # mail.Attachments.Add(attachment)
+    
 
     mail.Send()
 
